@@ -1,11 +1,10 @@
 import './App.css'
-import Landing from './views/Landing/Landing'
-
+import RouterProv from './routes/RouterProv'
 function App() {
 
   return (
     <>
-      <Landing/>     
+      <RouterProv/>     
     </>
   )
 }

@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: 'Outfit', sans-serif;
-}
-
 .wrapper{
   max-width: 1170px;
   margin-left: auto;
@@ -142,4 +134,56 @@ ul>li:hover{
 .product-description-text > h4{
   margin-top: 28px;
   font-weight: 400;
+}
+
+/* Login Page Styling */
+
+.login-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60vw;
+  height: 90vh;
+  background-color: #F1F0E8;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-radius: 20px;
+}
+
+.login-image{
+  background-image: url("./assets/loginImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.login-content-form{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  font-size: 1.2rem;
+}
+
+
+.login-content-form > input[type=email], input[type=password], input[type=submit]{
+  padding: 18px;
+  border-radius: 20px;
+  border: none;
+}
+
+.login-content-form > input[type=submit]{
+  cursor: pointer;
+  background-color: #374259;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.login-content-logo{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
