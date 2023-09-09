@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Login(){
     return(
         <>
@@ -11,12 +12,12 @@ function Login(){
                 </div>
                 <div className="login-content-form">
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Type your email"/>
+                    <input type="email" name="email" id="email-login" placeholder="Type your email"/>
                     <label htmlFor="passw">Password</label>
-                    <input type="password" name="passw" id="passw" placeholder="Type your password"/>
-                    <input type="submit" value="Log In" />
+                    <input type="password" name="passw" id="passw-login" placeholder="Type your password"/>
+                    <input type="submit" value="Log In"  id="submit-login"/>
                 </div>
-                <p style={{textAlign:"center"}}>New over here? <a href="#">Create an account!</a></p>
+                <p style={{textAlign:"center"}}>New over here? <Link to={'/signup'}><a href="#">Create an account!</a></Link></p>
             </div>
         </div>
         </>

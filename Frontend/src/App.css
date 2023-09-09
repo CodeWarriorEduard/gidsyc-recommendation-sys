@@ -168,11 +168,12 @@ ul>li:hover{
 }
 
 
-.login-content-form > input[type=email], input[type=password], input[type=submit]{
+.login-content-form > #email-login, #passw-login, #submit-login{
   padding: 18px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
 }
+
 
 .login-content-form > input[type=submit]{
   cursor: pointer;
@@ -186,4 +187,90 @@ ul>li:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*  SignUp Page  */
+
+.sigup-container{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F1F0E8;
+  padding: 20px;
+}
+
+.btn-signup{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+}
+
+.btn-signup > button{
+  width: 180px;
+  height: auto;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  margin-right: 10px;
+  background-color: #374259;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-signup > button:disabled{
+  background-color: gray;
+}
+
+.form-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-info > #email-sign, #name-sign, #passw-sign{
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+
+.country-section{
+  background-color: #FFFF;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.country-section > img{
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.location-selection{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+select{
+  width: 140px;
 }

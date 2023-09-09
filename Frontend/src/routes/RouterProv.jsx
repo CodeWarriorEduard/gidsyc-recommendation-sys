@@ -2,6 +2,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from '../views/Landing/Landing';
 import Login from '../views/Login/Login';
 import ErrorPage from '../views/Error/Error-Page';
+import Signup from '../views/Signup/Signup';
+
+import { Component } from 'react';
+
 function RouterProv(){
     
     const routes = createBrowserRouter([
@@ -14,6 +18,9 @@ function RouterProv(){
         },
         {path:"/login",
         Component:Login
+        },
+        {path:"/signup",
+        Component: Signup
         }
     ]);
     
