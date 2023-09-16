@@ -1,10 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Interest from '../../components/Register/Interest'
 import Location from '../../components/Register/Location'
 import Pinfo from '../../components/Register/PInfo'
 
 function Signup() {
 
+  const [userData, setUserData] = useState({
+    
+    personalInfo: {},
+    userLocation: {},
+    userInterests: {}
+  });
+
+  useEffect(() => {
+    console.log(userData)
+  }, [userData])
+  
+
+  const updateUserInfo = (data)=>{
+    
+    setUserData((prevInfo) => ({
+      ...prevInfo,
+      ...data,
+    }));
+  }
 
   const [index, setIndex] = useState(0);
 
@@ -12,13 +31,13 @@ function Signup() {
 
   const registerStep = ()=>{
     if(index == 0){
-      return <Pinfo/>
+      return <Pinfo updateUserInfo={updateUserInfo}/>
     }
     if(index == 1){
-      return <Location/>
+      return <Location updateUserInfo={updateUserInfo}/>
     }
     if(index == 2){
-      return <Interest/>
+      return <Interest updateUserInfo={updateUserInfo}/>
     }
   }
 

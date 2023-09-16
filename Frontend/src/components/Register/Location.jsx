@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import colombia from '../../data/Colombia.json'
 
 
-function Location() {
+function Location({updateUserInfo}) {
 
   const[depId, setDepId] = useState('');
   const[depart, setDepart] = useState('');
@@ -21,11 +21,14 @@ function Location() {
     const selectData = colombia.find(departamento => departamento.id == deparId);
     setDepart(selectData.departamento);
     setCities(selectData.ciudades);
+    updateUserInfo({ userLocation: { departamento: selectData.departamento, municipio: '' } });
   }
 
   const ciudadSelect = (e)=>{
     const citySelect = e.target.value;
     setCity(citySelect);
+    updateUserInfo({ userLocation: { departamento: depart, municipio: citySelect} });
+
   }
 
 

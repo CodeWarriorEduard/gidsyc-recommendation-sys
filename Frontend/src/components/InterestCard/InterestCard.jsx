@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 
-function InterestCard(props) {
+function InterestCard({name,handleInterest}) {
 
     const[clicked, setClicked] = useState(false);
 
     const handleClick = () =>{
-
         setClicked(!clicked)
+        handleInterest(name)
     };
 
   return (
     <div className={`interest-card ${clicked ? 'active' : ''}`} onClick={handleClick}>
-        {clicked ? <span>&#10003; {props.name}</span> : <p>{props.name}</p>}
+        {clicked ? <span>&#10003; {name}</span> : <p>{name}</p>}
     </div>
   )
 }
