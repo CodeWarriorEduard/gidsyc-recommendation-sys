@@ -8,8 +8,10 @@
   padding-right: 16px;
 }
 
+/*  Header  */
+
 h1{
-  color:#374259;
+  color:#2C2C4C;
 }
 
 header{
@@ -35,7 +37,7 @@ ul > li{
 }
 
 ul>li:hover{
-  background-color: #E5BA73;
+  background-color: #E15D2C;
   transition: 0.3ms ease-in-out;
 }
 
@@ -43,10 +45,12 @@ ul>li:hover{
 
 .hero_container{
   height: 80vh;
-  background-image: url("./assets/heroimage.jpg");
+  background-image: url("./assets/heroimage4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
+
 .hero_container_content-container{
   display: flex;
   align-items: center;
@@ -62,14 +66,14 @@ ul>li:hover{
 }
 
 .hero_text{
-  color: white;
+  color: #EEEDED;
   max-width: 400px;
   font-size: 62px;
 }
 
 .start-btn{
   margin-top: 20px;
-  background-color: #374259;
+  background-color: #2C2C4C;
   color: white;
   border-radius: 20px;
   border: none;
@@ -82,7 +86,7 @@ ul>li:hover{
 }
 
 .start-btn:hover{
-  background-color: #E5BA73;
+  background-color: #E15D2C;
   color: black;
   transition: 0.8s ease-in-out;
 }
@@ -177,7 +181,7 @@ ul>li:hover{
 
 .login-content-form > input[type=submit]{
   cursor: pointer;
-  background-color: #374259;
+  background-color: #2C2C4C;
   color: white;
   font-size: 1.2rem;
 }
@@ -189,12 +193,16 @@ ul>li:hover{
   align-items: center;
 }
 
+.login-content-logo > h1{
+  color: #2C2C4C;
+}
+
 /*  SignUp Page  */
 
 .sigup-container{
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 40vw;
   height: 60vh;
   border-radius: 10px;
   position: absolute;
@@ -202,7 +210,7 @@ ul>li:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #F1F0E8;
-  padding: 20px;
+  padding: 40px;
 }
 
 .btn-signup{
@@ -215,12 +223,12 @@ ul>li:hover{
 
 .btn-signup > button{
   width: 180px;
-  height: auto;
+  height: 60px;
   border-radius: 20px;
   border: none;
   font-size: 1rem;
   margin-right: 10px;
-  background-color: #374259;
+  background-color: #2C2C4C;
   color: white;
   cursor: pointer;
 }
@@ -304,4 +312,16 @@ select{
 .interest-card.active{
   border: solid black;
   background-color: orange;
+}
+
+
+
+/* Thank you page */
+
+.thankyou-container > h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
 }

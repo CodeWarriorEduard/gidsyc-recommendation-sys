@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Interest from '../../components/Register/Interest'
 import Location from '../../components/Register/Location'
 import Pinfo from '../../components/Register/PInfo'
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
+
+  const navigate = useNavigate();
 
   const [userData, setUserData] = useState({
     
@@ -12,11 +15,6 @@ function Signup() {
     userInterests: {}
   });
 
-  useEffect(() => {
-    console.log(userData)
-  }, [userData])
-  
-
   const updateUserInfo = (data)=>{
     
     setUserData((prevInfo) => ({
@@ -24,6 +22,15 @@ function Signup() {
       ...data,
     }));
   }
+
+  const handleSignup = () =>{
+
+    console.log(userData)
+    navigate("/thankyou");
+
+  }
+
+
 
   const [index, setIndex] = useState(0);
 
@@ -57,10 +64,14 @@ function Signup() {
           onClick={()=>{
             setIndex((current) => current -1)
           }}>Prev</button>
+         {index == tilteForm.length - 1 ? (
+            <button type='submit' onClick={handleSignup}>Sign Up</button>
+         ): (
           <button disabled={index == tilteForm.length - 1}
           onClick={()=>{
             setIndex((current)=>current+1)
           }}>Next</button>
+         )}
         </div>
       </div>
     </div>

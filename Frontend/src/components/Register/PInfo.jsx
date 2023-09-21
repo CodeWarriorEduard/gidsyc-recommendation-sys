@@ -29,12 +29,6 @@ function PInfo({updateUserInfo}) {
     AOS.init();
   },[])
 
-  useEffect(()=>{
-    console.log(Perinfo)
-  },[Perinfo])
-
-
-
   return (
     <div data-aos="fade-left">
       <div className='personal-info'>

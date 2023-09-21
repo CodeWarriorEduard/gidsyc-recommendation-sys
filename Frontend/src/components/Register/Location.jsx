@@ -54,7 +54,7 @@ function Location({updateUserInfo}) {
           <option value="">Select</option>
           {
             cities.map((getCity, index)=>(
-              <option value={getCity}>{getCity}</option>
+              <option key={index}>{getCity}</option>
             ))
           }
         </select>
