@@ -12,21 +12,18 @@ function ProductDesc(){
                 <div className="wrapper productdesc_container_content">
                     <div className="product-description">
                         <h2 data-aos='zoom-in'>
-                            Leave 
+                            Deja 
                             <br />
-                            <b>Everything</b>
+                            <b>Todo en</b>
                             <br />
-                            In our hands            
+                            Nuestras manos           
                         </h2>
                         <div className="product-description-text">
                             <p data-aos='zoom-in'>
-                                Based on your preferences, we recommend the best properties from sites such as Metro Cuadrado, Booking and Tripadvidsor.
+                            Basándonos en tus preferencias, te recomendamos las mejores propiedades de sitios como Metro Cuadrado.
                             </p>
-                            <h4 data-aos='zoom-in'>
-                                +1000
-                                <br />
-                                Houses
-                            </h4>
+                            
+                            
                         </div>
                     </div>
                     <div className="product_image" data-aos='zoom-in'>

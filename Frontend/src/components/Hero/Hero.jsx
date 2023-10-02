@@ -15,11 +15,11 @@ function Hero(){
             <div className="wrapper hero_container_content-container">
                 <div className="hero_container_content-container_cont">
                     <h2 className="hero_text" data-aos='fade'>
-                        Find the property of your dreams
+                        Encuentra el inmueble de tus sueños
                     </h2>
                         <Link to={`/login`}>
                             <button className="start-btn" data-aos='fade-up'>
-                                Start Here
+                                ¡Empecemos!
                             </button>    
                         </Link> 
                 </div>

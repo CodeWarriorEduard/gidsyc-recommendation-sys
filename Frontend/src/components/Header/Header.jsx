@@ -13,7 +13,7 @@ function Header(){
                     <nav>
                         <ul>
                             <li>Login</li>
-                            <li>About</li>
+                            <li>Acerca de</li>
                         </ul>
                     </nav>
                 </div>
