@@ -16,9 +16,6 @@ function RouterProv(){
         Component:Landing,
         errorElement: <ErrorPage/>
         },
-        {path:"/home",
-        Component: Home
-        },
         {path:"/login",
         Component:Login
         },
@@ -32,7 +29,7 @@ function RouterProv(){
         Component: Description
         },
         {
-            path: "/search",
+            path: "/home",
             Component: Search
         },
     ]);

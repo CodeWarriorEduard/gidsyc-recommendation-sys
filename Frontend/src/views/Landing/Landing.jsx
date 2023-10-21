@@ -10,7 +10,7 @@ import JoinUs from '../../components/JoinUs/JoinUs'
 function Landing(){
     return(
         <>
-            <Header/>
+            <Header logged={false}/>
             <Hero/>
             <WhoSection/>
             <ProductDesc/>

@@ -30,17 +30,21 @@ header{
   justify-content: space-between;
 }
 
+nav{
+  height: 80px;
+}
+
 nav > ul{
   display: flex;
 }
 
-ul > li{
+nav > ul > li{
   padding: 20px;
   font-size: 30px;
   border-radius: 10px;
 }
 
-ul>li:hover{
+nav > ul>li:hover{
   background-color: #E15D2C;
   transition: 0.3ms ease-in-out;
 }
@@ -251,14 +255,13 @@ ul>li:hover{
   align-items: center;
 }
 
-
 .personal-info > #email-sign, #name-sign, #passw-sign{
   padding: 18px;
   border-radius: 10px;
   border: none;
   width: 100%;
   margin-top: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -443,7 +446,7 @@ footer{
 .joinus-btn{
   width: 800px;
   height: 40px;
-  background-color: #2C2C4C;
+  background-color: #E15D2C;
   cursor: pointer;
   border-radius: 10px;
   margin-top: 20px;
@@ -454,7 +457,7 @@ footer{
 }
 
 .joinus-btn:hover{
-  transform: scale(1.02);
+  transform: scale(1.2);
 }
 
 
@@ -581,13 +584,14 @@ footer{
   gap: 20px;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .dropdown-text{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .dropdown-text > img{
@@ -596,5 +600,5 @@ footer{
 }
 
 .dropdown-menu {
-  z-index: 999; 
+  z-index: 999;
 }
