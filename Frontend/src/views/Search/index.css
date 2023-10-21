@@ -1,0 +1,12 @@
+.content {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 30% 50%;
+}
+  
+.content-container{
+  background-color: #F0F0F0;
+}
+  
+
+  

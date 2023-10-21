@@ -5,7 +5,9 @@ import ErrorPage from '../views/Error/Error-Page';
 import Signup from '../views/Signup/Signup';
 import ThankYou from '../views/ThankYou/ThankYou';
 import Home from '../views/Home/Home';
+import Description from '../views/Description/Description';
 import { Component } from 'react';
+import Search from '../views/Search';
 
 function RouterProv(){
     
@@ -25,7 +27,14 @@ function RouterProv(){
         },
         {path:"/thankyou",
         Component: ThankYou
-        }
+        },
+        {path:"/house",
+        Component: Description
+        },
+        {
+            path: "/search",
+            Component: Search
+        },
     ]);
     
     return(

@@ -34,7 +34,7 @@ function Location({updateUserInfo}) {
 
   return (
     <div data-aos="fade-left">
-      <h2 style={{marginBottom:"20px"}}>Select the location where you want to live.</h2>
+      <h2 style={{marginBottom:"20px", textAlign:"center"}}>Select the location where you want to live.</h2>
       <div className="country-section">
           <img src="./src/assets/colombiaflag.png" alt="colombia-flag" />
           <p>We're just in Colombia right now!</p>
